@@ -1,5 +1,5 @@
-import "./style.css";
+import './style.css';
 
 document
-  .querySelector<HTMLDivElement>("#app")
-  ?.append((document.createElement("p").textContent = "start app"));
+  .querySelector<HTMLDivElement>('#app')
+  ?.append((document.createElement('p').textContent = 'start app'));
