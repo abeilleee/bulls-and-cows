@@ -1,4 +1,4 @@
-import { getDigits } from '../utils/getDigits';
+import { getDigits } from '@utils/getDigits';
 import type { Base } from './types';
 
 /**

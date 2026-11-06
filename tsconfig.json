@@ -7,6 +7,10 @@
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
     "sourceMap": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
