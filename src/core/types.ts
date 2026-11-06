@@ -4,3 +4,8 @@ export enum Base {
   dec = 10,
   hex = 16,
 }
+
+export interface GuessEvaluation {
+  bulls: number;
+  cows: number;
+}
