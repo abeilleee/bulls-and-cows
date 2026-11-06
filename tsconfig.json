@@ -9,7 +9,9 @@
     "sourceMap": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@ui/types": ["./src/ui/types"],
+      "@ui/components/*": ["./src/ui/components/*"]
     },
 
     /* Bundler mode */
