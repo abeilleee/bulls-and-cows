@@ -1,0 +1,64 @@
+:root {
+  --radio-bg: #ffffff61;
+  --radio-bg-hover: #ffffff9b;
+  --radio-bg-checked: #ffb005d2;
+  --radio-border-color: #f7f7f775;
+  --radio-text-color-checked: #fff;
+}
+
+.radio {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.input {
+  pointer-events: none;
+
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  opacity: 0;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 52px;
+  padding: 8px 14px;
+  border: 1px solid var(--radio-border-color);
+  border-radius: 8px;
+
+  line-height: 1.2;
+
+  background-color: var(--radio-bg);
+
+  transition: all 0.3s;
+}
+
+.input:checked + .label {
+  border-color: var(--radio-bg-checked);
+  color: var(--radio-text-color-checked);
+  background-color: var(--radio-bg-checked);
+}
+
+.input:disabled + .label {
+  background-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .radio:not(.disabled):hover .input:not(:checked) + .label {
+    border-color: var(--radio-bg-checked);
+    background-color: var(--radio-bg-hover);
+  }
+}
