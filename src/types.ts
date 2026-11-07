@@ -6,4 +6,11 @@ export interface GameSettings {
   length: AvailableLength;
 }
 
+export interface GameResult {
+  achievedAt: number;
+  attempts: number;
+  durationMs: number;
+  settings: GameSettings;
+}
+
 export type AvailableLength = (typeof AVAILABLE_LENGTHS)[number];
