@@ -1,0 +1,25 @@
+:root {
+  --footer-height: 60px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: var(--footer-height);
+  padding: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo:hover {
+    transform: translateY(-3px);
+  }
+}
