@@ -1,23 +1,21 @@
 import { createRadioGroup, type RadioOption } from '@/ui/components/RadioGroup';
 import { createButton } from '@/ui/components/Button';
 import { createDomElement } from '@/utils/createDomElement';
-import { AVAILABLE_LENGTHS } from '@/constants';
-import { Base } from '@/core/types';
+import { AVAILABLE_LENGTHS, BASE_LABEL_ENTRIES } from '@/constants';
 import { countPossibleSecrets } from '@/core/countPossibleSecrets';
 import type { AvailableLength, GameSettings } from '@/types';
+import type { Base } from '@/core/types';
 import styles from './SettingsPanel.module.css';
-
-const BASE_OPTIONS: RadioOption<Base>[] = [
-  { value: Base.bin, label: 'BIN' },
-  { value: Base.oct, label: 'OCT' },
-  { value: Base.dec, label: 'DEC' },
-  { value: Base.hex, label: 'HEX' },
-];
 
 interface Props {
   initialSettings: GameSettings;
   onStart: (settings: GameSettings) => void;
 }
+
+export const BASE_OPTIONS: RadioOption<Base>[] = BASE_LABEL_ENTRIES.map(([value, label]) => ({
+  value,
+  label,
+}));
 
 export function createSettingsPanel({ initialSettings, onStart }: Props) {
   const container = createDomElement({

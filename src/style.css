@@ -13,6 +13,7 @@
   --main-margin: clamp(8px, 2vh, 20px);
   --main-padding: clamp(8px, 2.5vw, 20px);
   --layout-padding-y: clamp(4px, 1vh, 6px);
+  --delimiter-color: #ffffff71;
 }
 
 html,
