@@ -9,6 +9,7 @@
     "sourceMap": true,
     "paths": {
       "@/*": ["./src/*"],
+      "@types": ["./src/types"],
       "@utils/*": ["./src/utils/*"],
       "@ui/types": ["./src/ui/types"],
       "@ui/components/*": ["./src/ui/components/*"]

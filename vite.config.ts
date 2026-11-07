@@ -13,6 +13,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(import.meta.dirname, 'src'),
+      '@types': resolve(import.meta.dirname, 'src/types'),
       '@utils': resolve(import.meta.dirname, 'src/utils'),
       '@ui/types': resolve(import.meta.dirname, 'src/ui/types'),
       '@ui/components': resolve(import.meta.dirname, 'src/ui/components'),
