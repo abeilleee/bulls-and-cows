@@ -26,10 +26,10 @@ export function createGameInput({ length, base, onSubmit }: Props) {
     attributes: {
       type: 'text',
       maxlength: String(length),
-      placeholder: `Enter ${length} digits`,
+      placeholder: `Enter ${length} unique digits`,
       autocomplete: 'off',
       autocapitalize: 'off',
-      'aria-label': `Enter ${length} digits in base ${base}`,
+      'aria-label': `Enter ${length} unique digits in base ${base}`,
     },
   });
 
