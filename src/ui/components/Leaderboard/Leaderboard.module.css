@@ -66,7 +66,7 @@
   align-items: center;
   justify-content: center;
 
-  color: #552828b3;
+  color: var(--text-color-secondary);
   text-align: center;
 }
 
