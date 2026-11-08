@@ -19,16 +19,30 @@ export interface GuessEntry {
   cows: number;
 }
 
+export interface SettingsState {
+  phase: GamePhase.Settings;
+  settings: GameSettings;
+}
+
+export interface PlayingState {
+  phase: GamePhase.Playing;
+  settings: GameSettings;
+  secret: string;
+  history: GuessEntry[];
+  startedAt: number;
+}
+
 export interface WonState {
   phase: GamePhase.Won;
   settings: GameSettings;
   secret: string;
-  history: ReadonlyArray<GuessEntry>;
+  history: GuessEntry[];
   startedAt: number;
   finishedAt: number;
 }
 
 export type AvailableLength = (typeof AVAILABLE_LENGTHS)[number];
+export type GameState = SettingsState | PlayingState | WonState;
 
 export enum GamePhase {
   Settings,
