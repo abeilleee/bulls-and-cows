@@ -13,4 +13,25 @@ export interface GameResult {
   settings: GameSettings;
 }
 
+export interface GuessEntry {
+  guess: string;
+  bulls: number;
+  cows: number;
+}
+
+export interface WonState {
+  phase: GamePhase.Won;
+  settings: GameSettings;
+  secret: string;
+  history: ReadonlyArray<GuessEntry>;
+  startedAt: number;
+  finishedAt: number;
+}
+
 export type AvailableLength = (typeof AVAILABLE_LENGTHS)[number];
+
+export enum GamePhase {
+  Settings,
+  Playing,
+  Won,
+}
