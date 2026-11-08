@@ -1,0 +1,63 @@
+.container {
+  overflow: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+
+  min-height: 30%;
+  padding: 4px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.list {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 0 14px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  background-color: #ffffff59;
+}
+
+.index {
+  width: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: right;
+}
+
+.guess {
+  flex: 1;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-color-secondary);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .item {
+    gap: 8px;
+  }
+}
