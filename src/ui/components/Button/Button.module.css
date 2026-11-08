@@ -1,5 +1,5 @@
 :root {
-  --button-bg: #ffb005d2;
+  --button-bg: var(--primary-color);
   --button-bg-hover: #fed02b;
   --button-text-color: #fff;
 }

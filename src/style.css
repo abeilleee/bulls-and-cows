@@ -14,6 +14,8 @@
   --main-padding: clamp(8px, 2.5vw, 20px);
   --layout-padding-y: clamp(4px, 1vh, 6px);
   --delimiter-color: #ffffff71;
+  --text-color-secondary: #5528289e;
+  --primary-color: #ffb005d2;
 }
 
 html,

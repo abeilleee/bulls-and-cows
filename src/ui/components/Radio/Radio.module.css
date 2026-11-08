@@ -1,7 +1,7 @@
 :root {
   --radio-bg: #ffffff61;
   --radio-bg-hover: #ffffff9b;
-  --radio-bg-checked: #ffb005d2;
+  --radio-bg-checked: var(--primary-color);
   --radio-border-color: #f7f7f775;
   --radio-text-color-checked: #fff;
 }
