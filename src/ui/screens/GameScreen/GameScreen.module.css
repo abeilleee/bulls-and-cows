@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-m);
+
+  min-height: 0;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--delimiter-color);
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stat {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+}

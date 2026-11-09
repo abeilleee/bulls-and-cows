@@ -1,0 +1,22 @@
+/// <reference types="vitest/config" />
+import { resolve } from 'node:path';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/bulls-and-cows/' : './',
+  server: {
+    open: true,
+  },
+  test: {
+    globals: true,
+  },
+  resolve: {
+    alias: {
+      '@': resolve(import.meta.dirname, 'src'),
+      '@types': resolve(import.meta.dirname, 'src/types'),
+      '@utils': resolve(import.meta.dirname, 'src/utils'),
+      '@ui/types': resolve(import.meta.dirname, 'src/ui/types'),
+      '@ui/components': resolve(import.meta.dirname, 'src/ui/components'),
+    },
+  },
+});

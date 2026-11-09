@@ -1,0 +1,31 @@
+.win {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 20px;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 10px;
+
+  background-color: #ffffff80;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.secret {
+  font-size: 16px;
+}
+
+.secret-value {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
+}

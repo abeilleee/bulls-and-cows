@@ -1,0 +1,32 @@
+:root {
+  --button-bg: var(--primary-color);
+  --button-bg-hover: #fed02b;
+  --button-text-color: #fff;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  min-width: 52px;
+  padding: 8px 14px;
+  border-radius: 8px;
+
+  color: var(--button-text-color);
+
+  background-color: var(--button-bg);
+
+  transition: all 0.3s;
+
+  &:active {
+    box-shadow: inset 0 0 8px #0000001a;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: var(--button-bg-hover);
+  }
+}

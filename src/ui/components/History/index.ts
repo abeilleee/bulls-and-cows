@@ -1,0 +1,1 @@
+export { createHistory } from './History';

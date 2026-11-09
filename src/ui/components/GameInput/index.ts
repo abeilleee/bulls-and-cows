@@ -1,0 +1,1 @@
+export { createGameInput } from './GameInput';
