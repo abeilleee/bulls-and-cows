@@ -70,5 +70,9 @@ export function createHistory({ history, parentElement }: Props) {
     });
   });
 
+  requestAnimationFrame(() => {
+    list.scrollTop = list.scrollHeight;
+  });
+
   return container;
 }
